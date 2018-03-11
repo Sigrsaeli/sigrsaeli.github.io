@@ -176,10 +176,14 @@ section#about img {
 .section-header {
   color: #001f94;
 }
+.section-text {
+  text-align: center;
+}
 .section-text .details-btn {
   border: 3px solid #001f94;
   color: #001f94;
-  margin-top: 30%;
+  margin-top: 25%;
+  display: inline-block;
 }
 .section-text .details-btn:hover,
 .section-text .details-btn:focus {
