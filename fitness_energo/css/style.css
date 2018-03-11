@@ -179,6 +179,7 @@ section#about img {
 .section-text .details-btn {
   border: 3px solid #001f94;
   color: #001f94;
+  margin-top: 30%;
 }
 .section-text .details-btn:hover,
 .section-text .details-btn:focus {
