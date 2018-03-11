@@ -86,9 +86,7 @@ a {
 		/* text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.4); */
 		padding-bottom: 6%;
 		text-align: center;
-		h2 {
-			font-size: 54px;
-		}
+		font-size: 54px;
 	}
 	&-text {
 	color: @text;
@@ -188,8 +186,6 @@ section#about {
 	}
 	&-text{
 		.details-btn {
-			margin-top: 27%;
-			margin-left: 30%;
 			border: 3px solid @blue;
 			color: @blue;
 			&:hover, &:focus {
@@ -269,16 +265,19 @@ section#blog {
 }
 .blog {
 	&-content{
+		text-align: center;
 		.opn-reg;
 		color: @text;
-		.details-btn {
-		border-color: @blue;
-		color: @blue;
-		margin-top: 50%;
-		&:hover{
-			color:@white;
+			.details-btn {
+			border-color: @blue;
+			color: @blue;
+			margin-top: 50%;
+			text-align: center;
+			display: inline-block;
+			&:hover{
+				color:@white;
+				}
 			}
-		}
 	}
 }
 
@@ -549,9 +548,7 @@ section#blog {
 	}
 	.section {
 		&-header {
-			h2 {
-				font-size: 32px;
-			}
+			font-size: 32px;
 		}
 		&-text {
 			font-size: 12px;
@@ -590,6 +587,11 @@ section#blog {
 	.team {
 		&-box {
 			margin: 8%;
+			max-height: 165px;
+		}
+		&-description {
+			width: 575px;
+			overflow: hidden;
 		}
 		&-title {
 			.opn-bold;
@@ -711,15 +713,15 @@ section#blog {
 	}
 	.section {
 		&-header {
-			h2 {
-				font-size: 36px;
-			}
+			font-size: 36px;
 		}
 		&-text {
 			font-size: 12px;
+			text-align: center;
 			.details-btn {
 				display: inline-block;
-				margin: 7% 27%;
+				margin-top: 7%;
+				margin-bottom: 7%;
 			}
 		}
 	}
@@ -742,8 +744,25 @@ section#blog {
 		&-content {
 			.details-btn {
 				display: inline-block;
-				margin: 7% 27%;
+				margin-top: 7%;
+				margin-bottom: 7%;
 			}
+		}
+	}
+	
+	.team {
+		&-box {
+			margin: 8%;
+			max-height: 210px;
+		}
+		&-description {
+			width: 575px;
+			overflow: hidden;
+		}
+		&-title {
+			.opn-bold;
+			font-size: 36px;
+			margin-bottom: 36px;
 		}
 	}
 
@@ -783,7 +802,7 @@ section#blog {
 		}
 	}
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
 	header {
 	min-height: 740px;
 	height: 100vh;
@@ -863,7 +882,7 @@ section#blog {
 	    display: block;
 	    margin: 0 auto 3%;
 	}
-	.details-btn.about-btn {
+	.details-btn .about-btn {
 	    text-align: center;
 	    display: block;
 	    margin: 10% auto 3% auto;
@@ -933,10 +952,43 @@ section#blog {
 	}
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
 	section#blog {
 		button.blog-btn {
 			margin: 7% 35% 3% 35%;
 			}
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.blog {
+		&-content {
+			.details-btn {
+				display: inline-block;
+				margin-top: 135px;
+				margin-left: 17%;
+			}
+		}
+	}
+	
+	.about-btn {
+		    text-align: center;
+		    display: block;
+		    margin-top: 65px !important;
+	}
+
+	.card-form {
+		padding: 7%; 
+		&-title {
+			font-size: 26px;
+			margin-bottom: 7%;
+			margin-top: 3%;
+		}
+		input {
+			margin-bottom: 5%;
+		}
+		button {
+			margin-bottom: 5%;
+		}
 	}
 }
