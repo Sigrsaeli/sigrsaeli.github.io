@@ -1,0 +1,245 @@
+.header {
+	font-size: 45px;
+	text-align: center;
+	padding-top: 10%;
+	font-weight: bold;
+}
+.know-more{
+	background-color: #ff4e2e;
+	color: #fff;
+	width: 270px;
+	height: 60px;
+	border: none;
+	margin-top: 50px;
+}
+.know-more:hover {
+	background-color: #fff;
+	color: #ff4e2e;
+	border: 1px solid #ff4e2e;
+}
+.order-btn {
+	background-color: transparent;
+	border: 1px solid #fca2b7;
+	color: #fca2b7;
+	padding: 7px 35px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+.order-btn:active, .order-btn:focus {
+	color: #fca2b7;
+}
+.order-btn:hover {
+	background-color: #fca2b7;
+	color: #fff;
+}
+.wrapper-top {
+	background-color: #fbfbfb;
+	height: 770px;
+	position: relative;
+}
+.top-line {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: no-wrap;
+	height: 90px;
+	-ms-align-items: center;
+	align-items: center;
+}
+.top-menu {
+	width: 30%;
+}
+.top-menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.top-menu ul li {
+	display: inline-block;
+}
+.top-menu ul li a {
+	color: #000;
+	font-size: 16px;
+	transition: 0.2s ease-in-out;
+}
+.top-menu ul li a:hover {
+	color: #fca2b7;
+	border-bottom: 1px solid #fca2b7;
+	text-decoration: none;
+}
+.top-contacts {
+	margin: 0;
+	padding: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 40%;
+	justify-content: space-between;
+}
+.top-contacts .phone {
+	font-weight: bold;
+	font-size: 22px;
+}
+.main-title {
+	display: inline-block;
+	margin-top: 20%;
+	width: 50%;
+}
+.main-title h1 {
+	font-size: 55px;
+	font-weight: bold;
+	font-family: 'Tahoma';
+}
+.main-title p {
+	font-size: 16px;
+	color: #8993ad;
+}
+.main-title-img {
+	display: inline-block;
+	width: 575px;
+	height: 680px;
+	background: url('../img/Dmitry Alekseev.png') no-repeat center;
+	position: absolute;
+	bottom: 0;
+	right: 10%;
+}
+.skills  {
+	text-align: center;
+}
+.skills-items-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10%;
+}
+.skills-item p {
+	text-align: center;
+	margin-top: 20%;
+	color: #8993ad;
+}
+.skills-item {
+	text-align: center;
+}
+.skills .know-more {
+	margin-top: 10%;
+}
+.portfolio {
+	margin-top: 10%;
+	background-color: #fbfbfb;
+	text-align: center;
+	padding-bottom: 5%;
+}
+.portfolio-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10%;
+}
+.portfolio-item img {
+	width: 90%;
+	margin-bottom: 5%;
+}
+.portfolio p {
+	color: #8993ad;
+}
+.info {
+	background-color: #ff4e2e;
+	color: #fff;
+	padding-bottom: 5%;
+}
+.info .header {
+	text-align: left;
+}
+.contacts {
+	background-color: #fbfbfb;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.contacts-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.contacts-links{
+	list-style-type: none;
+}
+.contacts-links a{
+	color: #8993ad;
+}
+.contacts-item p{
+	display: inline-block;
+	font-size: 20px;
+}
+.social-btns{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10%;
+}
+.social-btns img{
+	height: 10%;
+}
+footer {
+	text-align: center;
+	color: #fff;
+	background-color: #31293c;
+	padding: 1% 0;
+}
+#popup-container{
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 5;
+	display: none;
+}
+#popup{
+	width: 280px;
+	height: 300px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px #000;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+#popup h4{
+	font-size: 18px;
+}
+#popup input {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+#popup button {
+	padding-bottom: 10px;
+}
